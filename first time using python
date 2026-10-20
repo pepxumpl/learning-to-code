@@ -1,1 +1,16 @@
-
+import random
+attempts = 0
+secret = random.randint(1, 10)
+guess = 0
+while  guess != secret and attempts < 3:
+  guess = int(input("Guess the secret number "))
+  attempts = attempts + 1
+  if guess == secret:
+   print("you guessed it correctly")
+  elif guess <= 0:
+   print("the number is too small try something bigger than 1")
+  elif guess >= 11:
+   print("the number is too big try something thats bigger than 1 and less than 11")
+  else:
+   print("maybe you make it on another try")
+if guess != secret:

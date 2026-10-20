@@ -14,3 +14,4 @@ while  guess != secret and attempts < 3:
   else:
    print("maybe you make it on another try")
 if guess != secret:
+  print(f"Game Over. the number was {secret}")
